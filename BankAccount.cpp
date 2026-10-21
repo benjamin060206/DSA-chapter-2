@@ -33,7 +33,7 @@ void BankAccount::deposit(double amount) {
 // TODO 5: Complete the withdraw member function header with scope resolution
 bool BankAccount::withdraw(double amount) {
     // TODO 6: Complete condition checking if amount is positive AND balance is sufficient
-    if (amount > 0 && balance > amount) {
+    if (amount > 0 && balance >= amount) {
         balance -= amount;
         std::cout << "Withdrew $" << amount << " successfully.\n";
         return true;
